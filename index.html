@@ -17,6 +17,34 @@
 
     <!-- Estilos personalizados -->
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Menu lateral fixo */
+      #sideNav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: #e1aadb;
+        z-index: 1030;
+        padding-top: 20px;
+      }
+
+      /* Conteúdo principal com margem */
+      .main-content {
+        margin-left: 250px;
+        padding: 20px;
+      }
+
+      .img-profile {
+        border: 4px solid #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
       .typing {
         font-family: 'Courier New', monospace;
         white-space: nowrap;
@@ -40,7 +68,7 @@
         padding: 40px;
         border-radius: 10px;
         color: #333;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       }
 
       footer {
@@ -55,42 +83,35 @@
 
   <body id="page-top">
     <!-- Navegação lateral -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Formação AWS Foundations</span>
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="profile.jpg" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre mim</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contato">Contato</a></li>
-          <li class="nav-item mt-3">
-            <a href="https://linkedin.com/in/riquelematos" target="_blank" style="color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px;">
-              <i class="fab fa-linkedin" style="color: #0A66C2;"></i>
-              linkedin.com/in/riquelematos
-            </a>
-          </li>
-        </ul>
+    <nav id="sideNav">
+      <div class="text-center">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="profile.jpg" style="width: 120px;" />
+        <h4 class="text-white mt-3">Riquele Matos</h4>
       </div>
-
-      <span class="d-none d-lg-block">
-        <img class="img-fluid mx-auto mb-2" src="assets/img/logocodegirls.png" alt="Logo Code Girls" />
-      </span>
+      <ul class="navbar-nav px-3 mt-4">
+        <li class="nav-item"><a class="nav-link text-white" href="#about">Sobre mim</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#skills">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+        <li class="nav-item mt-3">
+          <a href="https://linkedin.com/in/riquelematos" target="_blank" style="color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+            <i class="fab fa-linkedin" style="color: #0A66C2;"></i>
+            linkedin.com/in/riquelematos
+          </a>
+        </li>
+      </ul>
+      <div class="text-center mt-4">
+        <img class="img-fluid" src="assets/img/logocodegirls.png" alt="Logo Code Girls" style="width: 220px;" />
+      </div>
     </nav>
 
     <!-- Conteúdo principal -->
-    <div class="container-fluid p-0">
+    <div class="main-content">
       <!-- Sobre mim -->
       <section class="resume-section" id="about">
         <div class="resume-section-content">
           <h1 class="typing">AWS Foundations</h1>
           <div class="subheading mb-5">
-            Riquele Matos - Acadêmica em Engenharia de Software<br />
+            Acadêmica em Engenharia de Software<br />
             <a href="https://linkedin.com/in/riquelematos" target="_blank" style="color: inherit; text-decoration: none;">
               linkedin.com/in/riquelematos
             </a>
@@ -107,21 +128,11 @@
         <div class="resume-section-content">
           <h2 class="mb-5">Habilidades</h2>
           <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <i class="fab fa-python" style="font-size: 40px; color: #3776AB;" title="Python"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-java" style="font-size: 40px; color: #007396;" title="Java"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-github" style="font-size: 40px; color: #181717;" title="GitHub"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fas fa-database" style="font-size: 40px; color: hsl(36, 100%, 49%);" title="Oracle"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-aws" style="font-size: 40px; color: #83befe;" title="AWS"></i>
-            </li>
+            <li class="list-inline-item"><i class="fab fa-python" style="font-size: 40px; color: #3776AB;" title="Python"></i></li>
+            <li class="list-inline-item"><i class="fab fa-java" style="font-size: 40px; color: #007396;" title="Java"></i></li>
+            <li class="list-inline-item"><i class="fab fa-github" style="font-size: 40px; color: #181717;" title="GitHub"></i></li>
+            <li class="list-inline-item"><i class="fas fa-database" style="font-size: 40px; color: hsl(36, 100%, 49%);" title="Oracle"></i></li>
+            <li class="list-inline-item"><i class="fab fa-aws" style="font-size: 40px; color: #83befe;" title="AWS"></i></li>
           </ul>
         </div>
       </section>
@@ -167,10 +178,3 @@
     <!-- Rodapé -->
     <footer>
       <p>“A tecnologia é poderosa, mas o talento humano é o que a torna extraordinária.”</p>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
-</html>
