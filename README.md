@@ -1,6 +1,7 @@
 # 💻 Desafio web site - Code Girls 2025
 
 Este é o meu projeto de web site desenvolvido como parte da minha jornada no programa **Code Girls 2025**. Aqui compartilho minha formação, habilidades técnicas, certificações e formas de contato. O objetivo é apresentar minha trajetória como estudante de Engenharia de Software com foco em backend e soluções em nuvem.
+Para ver o projeto hospedado e funcionando [clique aqui](https://riquelematos.github.io/desafio-website-formacao-aws/)
 
 ---
 
