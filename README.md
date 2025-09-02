@@ -14,9 +14,6 @@ Sou Riquele Matos, acadêmica em Engenharia de Software, apaixonada por tecnolog
 
 - HTML5
 - CSS3
-- Bootstrap 5
-- Font Awesome
-- Google Fonts
 
 ---
 ## 📬 Contato
